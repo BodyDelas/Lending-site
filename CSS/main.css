@@ -18,7 +18,7 @@ body{
 
 header {
     width: 100%;
-    background: url(https://krot.info/uploads/posts/2020-01/1579314246_20-46.jpg);/*для заднего фона белого(прозрачный)*/
+    background: url(https://krot.info/uploads/posts/2020-01/1579314246_20-46.jpg);
     float: left;
     position: fixed;
     font-size: 2em;
