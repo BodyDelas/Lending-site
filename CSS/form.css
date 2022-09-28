@@ -1,0 +1,61 @@
+body{
+
+    background: url(https://phonoteka.org/uploads/posts/2021-04/1619304156_47-phonoteka_org-p-fon-klassa-v-shkole-dlya-gacha-laif-51.jpg);
+    font-family: 'Suez One', serif;
+    width: 100%;
+    background-position: center;
+    background-blend-mode: miltiply;
+}
+
+h1{
+    coursor: help;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 10px; /*отступ снизу*/
+    border-bottom: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    color: #fff;
+}
+
+form{
+    background: url(https://get.wallhere.com/photo/black-digital-art-minimalism-red-symmetry-blue-simple-triangle-pattern-geometry-diamonds-texture-circle-lines-light-color-shape-design-floor-line-screenshot-computer-wallpaper-117638.jpg);
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-position: center;
+}
+
+.group{
+    padding-top: 10px;
+}
+
+input{
+    margin-top: 10px;
+    height: 25px;
+    max-width: 200px;
+    border-radius: 15px;
+    border: none;
+}
+
+span{
+    color: #fff;
+}
+
+
+
+button{
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    background-color: rgb(145, 114, 165);
+    color: #fff;
+}
+
+.menu{
+    margin-top: 20px;
+    margin-left: 873px;
+}
