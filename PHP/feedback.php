@@ -1,11 +1,21 @@
+<?php
+$title = "Модель №1";//Название страницы
+$today = date("d.m.y");  //Текущий год, месяц, день
+$time = date("h:m:s"); //Текущее время
+
+$current_page = "feedback.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Обратная связь</title>
-    <link rel="stylesheet" href="CSS/feedback.css" />
+    <title><?php echo $title?></title>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../CSS/feedback.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,12 +29,19 @@
         <span class="siteName">TopModels</span>
       </div>
       <div class="about">
-        <a href="http://127.0.0.1:5501/index.html#hdr">Описание</a>
-        <a href="http://127.0.0.1:5501/index.html#overriew">Альбом</a>
-        <a href="http://127.0.0.1:5501/index.html#title">Возможности</a>
-        <a href="http://127.0.0.1:5501/index.html#contacs">Контакты</a>
-        <a href="form.html">Регистрация</a>
-        <a href="feedback.html">Обратная связь</a>
+        <a class="black_link" href="index.php#hdr">На главную</a>
+        <a class="black_link" href="index.php#overriew">Альбом</a>
+        <a class="black_link" href="index.php#title">Возможности</a>
+        <a class="black_link" href="index.php#contacs">Контакты</a>
+        <a href="<?php $link= 'form.php'; echo $link?>" 
+            class="<?php if($current_page===$link){
+                    echo 'menu_color';
+            }else echo 'black_link' ?>">Регистрация</a> 
+
+        <a href="<?php $link= 'feedback.php'; echo $link?>" 
+            class="<?php if($current_page===$link){
+                    echo 'menu_color';
+            } else echo 'black_link'?>">Обратная связь</a>
       </div>
     </header>
 
@@ -78,21 +95,15 @@
         <button type="submit" name="button">Отправить</button>
       </div>
     </form>
-    <div class="menu">
-      <button><a href="index.html">Главная страница</a></button>
-    </div>
-    <style>
-      a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-      }
-    </style>
-
+    
     <footer>
       <div class="contacs">
         <h3 id="contacs">Контактная информация</h3>
         <p>Мобильный телефон: 8(987)4151663</p>
         <p>Почта: bogstrij83@mail.ru</p>
+        <span class="footer-info__item">
+              <?php echo 'Сформировано ',  $today, " в ", $time ?>
+</span>
       </div>
     </footer>
   </body>
