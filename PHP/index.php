@@ -114,13 +114,13 @@ $current_page = "index.php";
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="top1">
     <header class="hdr" id="hdr">
       <div>
         <span class="siteName">TopModels</span>
       </div>
       <div class="about">
-      <a class="black_link" href="#hdr">На главную</a>
+      <a class="black_link" href="#top1">На главную</a>
         <a class="black_link" href="#overriew">Альбом</a>
         <a class="black_link" href="#title">Возможности</a>
         <a class="black_link" href="#contacs">Контакты</a>
