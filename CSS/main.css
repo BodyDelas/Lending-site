@@ -21,6 +21,7 @@ header {
   width: 100%;
   background: url(https://krot.info/uploads/posts/2020-01/1579314246_20-46.jpg);
   font-size: 2em;
+  position: fixed;
 }
 
 .siteName {

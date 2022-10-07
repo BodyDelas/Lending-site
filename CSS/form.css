@@ -19,6 +19,8 @@ header {
   width: 100%;
   background: url(https://krot.info/uploads/posts/2020-01/1579314246_20-46.jpg);
   font-size: 2em;
+  position: fixed;
+  top: 0;
 }
 
 .siteName {
@@ -55,7 +57,7 @@ h1 {
 }
 
 form {
-  background: url(https://get.wallhere.com/photo/black-digital-art-minimalism-red-symmetry-blue-simple-triangle-pattern-geometry-diamonds-texture-circle-lines-light-color-shape-design-floor-line-screenshot-computer-wallpaper-117638.jpg);
+  background: url(https://i1.wallbox.ru/wallpapers/main/201130/tekstury-oboi-texture-92a8c9b.jpg);
   border-radius: 20px;
   text-align: center;
   margin-left: 500px;
@@ -65,6 +67,7 @@ form {
   padding-bottom: 40px;
   background-position: center;
   margin-bottom: 40px;
+  height: 380px;
 }
 
 .group {
