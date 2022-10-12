@@ -1,17 +1,47 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   outline: none; /*обводки не будет*/
 }
 
-/* body, */
 html {
   width: 100%;
   height: 100%;
-  background: url(https://i.artfile.ru/2500x1503_953046_[www.ArtFile.ru].jpg);
+
+  background: url(https://i.artfile.ru/2500x1503_953046_[www.ArtFile.ru].jpg)
+    no-repeat;
   font-family: "Suez One", serif;
   background-position: center;
-  background-blend-mode: multiply;
+  /* background-blend-mode: miltiply; */
+}
+
+main {
+  background: url(https://phonoteka.org/uploads/posts/2021-03/1616659335_57-p-zadnii-fon-dlya-saita-60.jpg);
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-top: 400px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  /* background-position: center; */
+  margin-bottom: 40px;
+}
+main * {
+  margin: 5px;
+}
+
+.got_file {
+  color: #ffffff;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 header {
@@ -46,27 +76,12 @@ header {
 }
 
 h1 {
-  coursor: help;
   margin: 0;
   text-transform: uppercase;
   padding-bottom: 10px; /*отступ снизу*/
   border-bottom: 3px solid rgb(0, 0, 0);
   text-align: center;
   color: #fff;
-}
-
-form {
-  background: url(https://phonoteka.org/uploads/posts/2021-03/1616659335_57-p-zadnii-fon-dlya-saita-60.jpg);
-  border-radius: 20px;
-  text-align: center;
-  margin-left: 500px;
-  margin-right: 500px;
-  margin-top: 200px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  /* background-position: center; */
-  margin-bottom: 40px;
-  height: 380px;
 }
 
 .group {
@@ -91,11 +106,16 @@ button {
 }
 
 .menu {
+  margin-left: 875px;
   margin-top: 20px;
-  margin-left: 873px;
+}
+
+p {
+  color: rgb(255, 255, 255);
 }
 
 footer {
+  margin-top: 300px;
   width: 100%;
   float: left;
   font-size: 2em;
@@ -115,4 +135,9 @@ footer {
 
 .menu_color {
   color: #b0b0b0;
+}
+
+textarea {
+  width: 350px;
+  height: 200px;
 }

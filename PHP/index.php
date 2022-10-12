@@ -95,9 +95,6 @@ $array = [
 $current_page = "index.php";
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -115,27 +112,8 @@ $current_page = "index.php";
     />
   </head>
   <body id="top1">
-    <header class="hdr" id="hdr">
-      <div>
-        <span class="siteName">TopModels</span>
-      </div>
-      <div class="about">
-      <a class="black_link" href="#top1">На главную</a>
-        <a class="black_link" href="#overriew">Альбом</a>
-        <a class="black_link" href="#title">Возможности</a>
-        <a class="black_link" href="#contacs">Контакты</a>
-
-        <a href="<?php $link= 'form.php'; echo $link?>" 
-            class="<?php if($current_page=$link){
-                    echo 'menu_color';
-            } else echo 'black_link'?>">Регистрация</a> 
-
-        <a href="<?php $link= 'feedback.php'; echo $link?>" 
-            class="<?php if($current_page=$link){
-                    echo 'menu_color';
-            } else echo 'black_link'?>">Обратная связь</a>
-      </div> 
-    </header>
+    
+  <?php include 'templates/header.php'?>
 
     <div class="top" id="top">
       <h1>Top Models</h1>
@@ -216,15 +194,7 @@ $current_page = "index.php";
       </ul>
     </div>
 
-    <footer>
-      <div class="contacs">
-        <h3 id="contacs">Контактная информация</h3>
-        <p>Мобильный телефон: 8(987)4151663</p>
-        <p>Почта: bogstrij83@mail.ru</p>
-        <span class="footer-info__item">
-              <?php echo 'Сформировано ',  $today, " в ", $time ?>
-</span>
-      </div>
-    </footer>
+    <?php include 'templates/footer.php' ?>
+    
   </body>
 </html>

@@ -4,15 +4,16 @@
   outline: none; /*обводки не будет*/
 }
 
-body,
+/* body, */
 html {
   width: 100%;
   height: 100%;
 
-  background: url(https://i.artfile.ru/2500x1503_953046_[www.ArtFile.ru].jpg);
+  background: url(https://i.artfile.ru/2500x1503_953046_[www.ArtFile.ru].jpg)
+    no-repeat;
   font-family: "Suez One", serif;
   background-position: center;
-  background-blend-mode: miltiply;
+  /* background-blend-mode: miltiply; */
 }
 
 header {
@@ -64,7 +65,7 @@ form {
   margin-top: 200px;
   padding-top: 40px;
   padding-bottom: 30px;
-  background-position: center;
+  /* background-position: center; */
   margin-bottom: 40px;
 }
 
@@ -118,4 +119,9 @@ footer {
 
 .menu_color {
   color: #b0b0b0;
+}
+
+textarea {
+  width: 350px;
+  height: 200px;
 }
