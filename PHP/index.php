@@ -113,7 +113,7 @@ $current_page = "index.php";
   </head>
   <body id="top1">
     
-  <?php include 'templates/header.php'?>
+  <?php include '../templates/header.php'?>
 
     <div class="top" id="top">
       <h1>Top Models</h1>
@@ -194,7 +194,7 @@ $current_page = "index.php";
       </ul>
     </div>
 
-    <?php include 'templates/footer.php' ?>
+    <?php include '../templates/footer.php' ?>
     
   </body>
 </html>

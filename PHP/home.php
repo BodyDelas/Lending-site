@@ -23,7 +23,7 @@ $current_page = "feedback.php";
     />
   </head>
   <body>
-  <?php include 'templates/header.php'?>
+  <?php include '../templates/header.php'?>
 
     <main>
       <?php 
@@ -51,7 +51,7 @@ $current_page = "feedback.php";
   
 
     
-    <?php include 'templates/footer.php' ?>
+    <?php include '../templates/footer.php' ?>
 
   </body>
 </html>

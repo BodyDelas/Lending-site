@@ -25,7 +25,7 @@ $current_page = "form.php";
   </head>
   <body>
     
-  <?php include 'templates/header.php'?>
+  <?php include '../templates/header.php'?>
 
     <form action="https://httpbin.org/post" method="post">
       <h1 title="Форма регистрации на сайте">Регистрация</h1>
@@ -60,7 +60,7 @@ $current_page = "form.php";
       </div>
     </form>
     
-    <?php include 'templates/footer.php' ?>
+    <?php include '../templates/footer.php' ?>
 
   </body>
 </html>

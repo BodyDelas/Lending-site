@@ -32,7 +32,7 @@ $Soglasie = '';
   </head>
   <body>
     
-  <?php include 'templates/header.php'?>
+  <?php include '../templates/header.php'?>
 
     <form action="home.php" method="post">
       <h1 title="Обратная связь">Обратная связь</h1>
@@ -83,7 +83,7 @@ $Soglasie = '';
       </div>
     </form>
     
-    <?php include 'templates/footer.php' ?>
+    <?php include '../templates/footer.php' ?>
 
   </body>
 </html>
