@@ -27,9 +27,7 @@ $current_page = "feedback.php";
 
     <main>
       <?php 
-      $Soglasie = 'off';
-      if (isset($_POST['Soglasie'])) $Soglasie = $_POST['Soglasie'];
-
+      
         echo '<p>Здравствуйте, <b>'.$_POST['FIO'].'</b></p>';
         if ($_POST['select']=='Predlozhenie') {
             echo '<p>Спасибо за Ваше предложение</p>';
@@ -40,7 +38,7 @@ $current_page = "feedback.php";
 
         if (isset($_POST['f']) & $_POST['f']!='') echo'<p>Вы приложили следующий файл: <span class="got_file"><p>'.$_POST['f'];
                     
-        echo '<div class="ta-center"><button><a class="btn"<a class="btn" href="feedback.php?FIO='.$_POST['FIO'].
+        echo '<div><button><a class="btn"<a class="btn" href="feedback.php?FIO='.$_POST['FIO'].
             '&email='.$_POST['email'].
             '&radio='.$_POST['radio'].
             '">Заполнить снова</a></button></div>';
