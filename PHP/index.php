@@ -8,41 +8,41 @@ $s = date("s"); // Текущая секунда
 $os = (int)$s % 2; // Четность секунды
 
 
-if ($os == 0) {
-    $photo1 = "https://infotolium.com/uploads/posts/2014-11/1416350391_most-beautiful-girls-on-planet-6.jpg";
-} else {
-    $photo1 = "https://crobux.ru/wp-content/uploads/a/c/f/acf7a7b444166eb32bd64ff50deda599.jpeg";
-}
+// if ($os == 0) {
+//     $photo1 = "https://infotolium.com/uploads/posts/2014-11/1416350391_most-beautiful-girls-on-planet-6.jpg";
+// } else {
+//     $photo1 = "https://crobux.ru/wp-content/uploads/a/c/f/acf7a7b444166eb32bd64ff50deda599.jpeg";
+// }
 
-if ($os == 0) {
-    $photo3 = "https://img-fotki.yandex.ru/get/4117/46934776.97d/0_b99a7_a4f8239a_XL.jpg";
-} else {
-    $photo3 = "https://tabakur77.ru/wp-content/uploads/4/b/c/4bc6ed0c9fa1e01075f8b51e22ca3749.jpeg";
-}
+// if ($os == 0) {
+//     $photo3 = "https://img-fotki.yandex.ru/get/4117/46934776.97d/0_b99a7_a4f8239a_XL.jpg";
+// } else {
+//     $photo3 = "https://tabakur77.ru/wp-content/uploads/4/b/c/4bc6ed0c9fa1e01075f8b51e22ca3749.jpeg";
+// }
 
-if ($os == 0) {
-    $photo2 = "http://mama-likes.ru/wp-content/uploads/2017/02/1-72.jpg";
-} else {
-    $photo2 = "https://catherineasquithgallery.com/uploads/posts/2021-02/1614424300_4-p-deti-na-temnom-fone-4.jpg";
-}
+// if ($os == 0) {
+//     $photo2 = "http://mama-likes.ru/wp-content/uploads/2017/02/1-72.jpg";
+// } else {
+//     $photo2 = "https://catherineasquithgallery.com/uploads/posts/2021-02/1614424300_4-p-deti-na-temnom-fone-4.jpg";
+// }
 
-if ($os == 0) {
-    $photo4 = "https://pp.userapi.com/1r2FcGDCeMkdfkjhKdWz6zAh5zwmWnfqkhCmhw/zhTizSs5DN8.jpg";
-} else {
-    $photo4 = "http://kapitosha.net/wp-content/uploads/2020/07/xxl.jpg";
-}
+// if ($os == 0) {
+//     $photo4 = "https://pp.userapi.com/1r2FcGDCeMkdfkjhKdWz6zAh5zwmWnfqkhCmhw/zhTizSs5DN8.jpg";
+// } else {
+//     $photo4 = "http://kapitosha.net/wp-content/uploads/2020/07/xxl.jpg";
+// }
 
-if ($os == 0) {
-    $photo5 = "http://kzndeti.ru/userfiles/images/image-12-2017/photo_2017_12_27_13_37_59.jpg";
-} else {
-    $photo5 = "https://static.tildacdn.com/tild3833-3263-4838-a230-366365643631/150b.jpg";
-}
+// if ($os == 0) {
+//     $photo5 = "http://kzndeti.ru/userfiles/images/image-12-2017/photo_2017_12_27_13_37_59.jpg";
+// } else {
+//     $photo5 = "https://static.tildacdn.com/tild3833-3263-4838-a230-366365643631/150b.jpg";
+// }
 
-if ($os == 0) {
-    $photo6 = "https://happykidsmodels.ru/wp-content/uploads/2018/09/VM1_9156.jpg";
-} else {
-    $photo6 = "https://i.pinimg.com/originals/24/d2/2b/24d22bf0a466a8e38f06fd5613175c27.jpg";
-}
+// if ($os == 0) {
+//     $photo6 = "https://happykidsmodels.ru/wp-content/uploads/2018/09/VM1_9156.jpg";
+// } else {
+//     $photo6 = "https://i.pinimg.com/originals/24/d2/2b/24d22bf0a466a8e38f06fd5613175c27.jpg";
+// }
 
 $array = [
     '<li>ЗАНЯТИЯ НА ПОДИУМЕ</li>
@@ -93,6 +93,56 @@ $array = [
 ];
 
 $current_page = "index.php";
+
+include "../db/db.php";
+  $result = mysqli_query($mysql, "SELECT * FROM `imgs`");
+  
+  $arrayLink = [];
+  
+  while ($name = mysqli_fetch_assoc($result)) {
+    array_push($arrayLink, $name['link']);
+  }
+  
+  if ($os == 0) {
+      $photo1 = $arrayLink[0];
+      
+  } else {
+      $photo1 = $arrayLink[1];
+      
+  }
+  
+  
+  if ($os == 0) {
+      $photo3 = $arrayLink[2];
+  } else {
+      $photo3 = $arrayLink[3];
+  }
+  
+  if ($os == 0) {
+      $photo2 = $arrayLink[4];
+  } else {
+      $photo2 = $arrayLink[5];
+  }
+  
+  if ($os == 0) {
+      $photo4 = $arrayLink[6];
+  } else {
+      $photo4 = $arrayLink[7];
+  }
+  
+  if ($os == 0) {
+      $photo5 = $arrayLink[8];
+  } else {
+      $photo5 = $arrayLink[9];
+  }
+  
+  if ($os == 0) {
+      $photo6 = $arrayLink[10];
+  } else {
+      $photo6 = $arrayLink[11];
+  }
+
+  $mysql->close();
 ?>
 
 <!DOCTYPE html>
